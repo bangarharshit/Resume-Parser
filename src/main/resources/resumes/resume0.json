@@ -1,0 +1,52 @@
+{
+  "schools": [
+    {
+      "name": "XYZ School",
+      "major": "MS",
+      "start_time": "12/10/2005",
+      "end_time": "02/04/2007",
+      "description": "I did my MS, Masters in Computers Science at ABCD from 2005 to 2007. I have skill_1, skill_2 and skill_3"
+    },
+    {
+      "name": "ABC, Bangalore",
+      "major": "B.E",
+      "start_time": "01/02/1996",
+      "end_time": "02/10/2000",
+      "description": "Did my B.E in Computer science from 1996 to 2000. Skilled in Python, Java, C++ and C"
+    }
+  ],
+  "id": "sample_candidate_id_2",
+  "title": "Software Engineer",
+  "location": "ABC Bay Area",
+  "email": "johndoe@candidate.com",
+  "testimonies": [
+    {
+      "name": "Jack Doe",
+      "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+      "name": "Julia",
+      "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    }
+  ],
+  "phone": "+9112312312",
+  "gender": "F",
+  "experience": [
+    {
+      "description": "I am a senior level developer with several years experience in the field of Java development with expertise in Big Data, Cloud computing Hadoop technologies like map-reduce, Pig, Hive, and HDFS and also realtime technologies like Storm. I also have experience in web development. I have done my MS in ABCD and XYZ, both highly reputed colleges and both the degrees in Computer science. \n\nSpecialties: Expertise in Java programming, Cloud computing technologies like Hadoop technologies like map-reduce, Hive, Pig and HDFS, . I also have considerable experience in C++ developement on Linux and J2EE based application development",
+      "title": "Software Engineer",
+      "company": "xyz",
+      "start_time": "12/10/2005",
+      "end_time": "02/04/2007"
+    },
+    {
+      "description": "Building big-data pipeline infrastructure for big-chain restaurants for generating guest analytics using Hadoop, Hive, HBase, Sqoop, Java programming, SQL and shell scripting. This data pipeline delivers user-segmentation reports, menu-item-segmentation reports and business reports for these restaurants using their POS (Point Of Sale) system data as input. \nAs Software Engineer, I was involved in the end-to-end design and development of this data pipeline.",
+      "title": "Junior Software Engineer, Big Data,Data Infrastructure, ABC",
+      "company": "abc",
+      "start_time": "12/10/2005",
+      "end_time": "Present"
+    }
+  ],
+  "about_me": "I am a senior level developer with several years experience in the field of Java development with expertise in Big Data, Cloud computing Hadoop technologies like map-reduce, Pig, Hive, and HDFS and also realtime technologies like Storm. I also have experience in web development. I have done my MS in ABCD and XYZ, both highly reputed colleges and both the degrees in Computer science. \n\nSpecialties: Expertise in Java programming, Cloud computing technologies like Hadoop technologies like map-reduce, Hive, Pig and HDFS, . I also have considerable experience in C++ developement on Linux and J2EE based application development",
+  "fullname": "John Doe 2"
+}

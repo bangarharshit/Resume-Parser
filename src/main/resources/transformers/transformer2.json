@@ -1,0 +1,25 @@
+
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "id": "id",
+
+      "schools": {
+        "*": {
+          "name": "education.[].school",
+          "major": "education.[].degree",
+          "start_time": "education.[].time[0]",
+          "end_time": "education.[].time[1]",
+          "description": "education.[].description"
+        }
+      },
+      "testimonies": {
+        "*": {
+          "name":"endorsements.[].work",
+          "comment": "endorsements.[].description"
+        }
+      }
+    }
+  }
+]

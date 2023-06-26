@@ -1,0 +1,274 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Welcome9",
+  "definitions": {
+    "Welcome9": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "education": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Education"
+          }
+        },
+        "id": {
+          "type": "string"
+        },
+        "industries": {
+          "type": "array",
+          "items": {}
+        },
+        "title": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "integer"
+        },
+        "email": {
+          "type": "string"
+        },
+        "firstname": {
+          "type": "string"
+        },
+        "raw_profile_link": {
+          "type": "string",
+          "format": "uri",
+          "qt-uri-protocols": [
+            "https"
+          ],
+          "qt-uri-extensions": [
+            ".png"
+          ]
+        },
+        "lastname": {
+          "type": "string"
+        },
+        "endorsements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Endorsement"
+          }
+        },
+        "phone": {
+          "type": "string"
+        },
+        "gender": {
+          "type": "string"
+        },
+        "enc_id": {
+          "type": "string"
+        },
+        "experience": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Experience"
+          }
+        },
+        "summary": {
+          "type": "string"
+        },
+        "fullname": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "education",
+        "email",
+        "enc_id",
+        "endorsements",
+        "experience",
+        "firstname",
+        "fullname",
+        "gender",
+        "id",
+        "industries",
+        "lastname",
+        "location",
+        "phone",
+        "raw_profile_link",
+        "summary",
+        "timestamp",
+        "title"
+      ],
+      "title": "Welcome9"
+    },
+    "Education": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "edited": {
+          "type": "null"
+        },
+        "school": {
+          "type": "string"
+        },
+        "event_type": {
+          "type": "string"
+        },
+        "degree": {
+          "type": "string"
+        },
+        "skills": {
+          "type": "array",
+          "items": {}
+        },
+        "major": {
+          "type": "string"
+        },
+        "awards": {
+          "type": "array",
+          "items": {}
+        },
+        "abbr": {
+          "type": "string"
+        },
+        "time": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "integer"
+          }
+        },
+        "duration": {
+          "type": "integer"
+        },
+        "addl_json": {
+          "$ref": "#/definitions/AddlJSON"
+        },
+        "image_url": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "qt-uri-protocols": [
+                "https"
+              ],
+              "qt-uri-extensions": [
+                ".png"
+              ]
+            }
+          ]
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "abbr",
+        "addl_json",
+        "awards",
+        "degree",
+        "description",
+        "duration",
+        "edited",
+        "event_type",
+        "image_url",
+        "major",
+        "school",
+        "skills",
+        "time"
+      ],
+      "title": "Education"
+    },
+    "AddlJSON": {
+      "type": "object",
+      "additionalProperties": false,
+      "title": "AddlJSON"
+    },
+    "Endorsement": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "work": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "metadata": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "description",
+        "metadata",
+        "work"
+      ],
+      "title": "Endorsement"
+    },
+    "Experience": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "edited": {
+          "type": "null"
+        },
+        "description": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "work": {
+          "type": "string"
+        },
+        "growth_percentile": {
+          "type": "null"
+        },
+        "addl_json": {
+          "$ref": "#/definitions/AddlJSON"
+        },
+        "location": {
+          "type": "string"
+        },
+        "time": {
+          "$ref": "#/definitions/Time"
+        },
+        "duration": {
+          "type": "integer"
+        },
+        "user_verified_skills": {
+          "type": "boolean"
+        },
+        "event_type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "addl_json",
+        "description",
+        "duration",
+        "edited",
+        "event_type",
+        "growth_percentile",
+        "location",
+        "time",
+        "title",
+        "user_verified_skills",
+        "work"
+      ],
+      "title": "Experience"
+    },
+    "Time": {
+      "anyOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "type": "string"
+        }
+      ],
+      "title": "Time"
+    }
+  }
+}

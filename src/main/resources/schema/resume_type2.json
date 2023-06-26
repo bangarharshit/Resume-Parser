@@ -1,0 +1,143 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Welcome4",
+  "definitions": {
+    "Welcome4": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schools": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/School"
+          }
+        },
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "testimonies": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Testimony"
+          }
+        },
+        "phone": {
+          "type": "string"
+        },
+        "gender": {
+          "type": "string"
+        },
+        "experience": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Experience"
+          }
+        },
+        "about_me": {
+          "type": "string"
+        },
+        "fullname": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "about_me",
+        "email",
+        "experience",
+        "fullname",
+        "gender",
+        "id",
+        "location",
+        "phone",
+        "schools",
+        "testimonies",
+        "title"
+      ],
+      "title": "Welcome4"
+    },
+    "Experience": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "company": {
+          "type": "string"
+        },
+        "start_time": {
+          "type": "string"
+        },
+        "end_time": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "company",
+        "description",
+        "end_time",
+        "start_time",
+        "title"
+      ],
+      "title": "Experience"
+    },
+    "School": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "major": {
+          "type": "string"
+        },
+        "start_time": {
+          "type": "string"
+        },
+        "end_time": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "description",
+        "end_time",
+        "major",
+        "name",
+        "start_time"
+      ],
+      "title": "School"
+    },
+    "Testimony": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "comment": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "comment",
+        "name"
+      ],
+      "title": "Testimony"
+    }
+  }
+}

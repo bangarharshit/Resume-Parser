@@ -1,0 +1,10 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "education": "education",
+      "id": "id",
+      "endorsements": "endorsements"
+    }
+  }
+]
